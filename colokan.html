@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Detail</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#" class="logo">Smarthome</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.php">Products</a></li>
+            <li><a href="login.php">Login</a></li>
+          </ul>
+          <button class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+  <div class="product-container">
+    <!-- Gambar Buku -->
+    <div class="book-image">
+      <img src="foto/smart plug.png" alt="Sapiens Book Cover">
+    </div>
+
+    <!-- Detail Buku -->
+    <div class="book-details">
+      <h2>Lampu LED Pintar</h2>
+      <div class="price">
+        <span class="original-price">Rp. 100.000</span>
+        <span class="discounted-price">Rp. 40.000</span>
+      </div>
+      <p>
+        <ol>
+            <li>Kendalikan perangkat listrik dari jarak jauh</li>
+            <li>Monitor konsumsi daya secara real-time</li>
+            <li>Mulai dari Rp40.000/bulan</li>
+        </ol>
+     
+      </p>
+      
+      <!-- Add to Cart Section -->
+      <div class="cart-section">
+        <button class="add-to-cart-button" onclick="window.location.href='colok.php'">Sewa Sekarang</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

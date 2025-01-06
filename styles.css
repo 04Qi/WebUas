@@ -1,0 +1,276 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+    margin: 15px 0;
+  }
+  
+  .price {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .price .original {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+/* Navbar Styling */
+.navbar {
+    background-color: #1fc641;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffdd57;
+  }
+  
+  /* Mobile Menu Toggle Button */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #007bff;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      gap: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  .basic-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  /* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Kontainer utama */
+  .product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Gambar buku */
+  .book-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+  }
+  
+  /* Detail buku */
+  .book-details {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .book-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .price {
+    margin: 15px 0;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .discounted-price {
+    color: #28a745;
+    font-size: 1.2em;
+  }
+  
+  .book-details p {
+    margin-bottom: 20px;
+  }
+  
+  /* Bagian cart */
+  .cart-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-button {
+    padding: 10px;
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+    
+ 
